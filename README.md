@@ -1,7 +1,7 @@
-# FOREVER : E-Commerce Project
+# SmartCart : E-Commerce Project
 
 ## Overview
-FOREVER is a full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js) and integrated with Stripe and Razorpay for secure and flexible payment options. The platform offers a seamless user experience, with features that allow users to browse, search, and filter products, add items to the cart, and manage their orders. For site administrators, a custom admin panel enables easy management of products and order statuses.
+SmartCart is a full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js) and integrated with Stripe and Razorpay for secure and flexible payment options. The platform offers a seamless user experience, with features that allow users to browse, search, and filter products, add items to the cart, and manage their orders. For site administrators, a custom admin panel enables easy management of products and order statuses.
 
 ## Features
 
@@ -76,10 +76,64 @@ FOREVER is a full-stack e-commerce platform built with the MERN stack (MongoDB, 
     - Out for Delivery
     - Delivered
 
+### 10. Legal & Information Pages
+- **Privacy Policy**: Comprehensive privacy policy page detailing data collection and usage practices.
+- **Delivery Information**: Detailed delivery policies including shipping times, costs, and tracking information.
+
 ## Technology Stack
 - **Front-end**: React
 - **Back-end**: Express.js, Node.js
 - **Database**: MongoDB
 - **Payment Gateways**: Stripe, Razorpay
+- **Image Storage**: Cloudinary
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v18+)
+- MongoDB
+- Cloudinary account
+- Stripe/Razorpay accounts
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Chaithanya182/SmartCart.git
+   cd SmartCart
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Backend
+   cd backend && npm install
+
+   # Frontend
+   cd ../frontend && npm install
+
+   # Admin
+   cd ../admin && npm install
+   ```
+
+3. **Set up environment variables**
+   Create `.env` files in backend, frontend, and admin directories with the required API keys.
+
+4. **Run the application**
+   ```bash
+   # Backend (from backend directory)
+   npm run server
+
+   # Frontend (from frontend directory)
+   npm run dev
+
+   # Admin (from admin directory)
+   npm run dev
+   ```
+
+5. **Access the application**
+   - Frontend: http://localhost:5173
+   - Admin Panel: http://localhost:5174
+
+---
 
 This robust e-commerce solution caters to both users and administrators, providing a complete shopping experience and backend management system. The project demonstrates the power of the MERN stack in building a full-featured online store.
